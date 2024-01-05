@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CRUD</title>
+  <link rel="stylesheet" href="css/all.css" />
+  <link rel="stylesheet" href="css/normaliz.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <div class="container ">
+    <div class="crud w-100 py-5 ">
+      <!-- head -->
+      <div class="row head text-center">
+        <h1>CRUD</h1>
+      </div>
+      <!-- end -->
+
+      <!-- inputs -->
+      <div class="row">
+        <div>
+          <input type="text" class="form-control mb-2" placeholder="title" id="title" value="" />
+        </div>
+      </div>
+      <!-- inputofprice" -->
+      <div class="row">
+        <div class="d-flex justify-content-between">
+          <div class="col-2">
+            <input type="number" class="form-control" placeholder="price" id="price" value="" />
+          </div>
+          <div class="col-2">
+            <input type="number" class="form-control" placeholder="taxes" id="taxes" value="" />
+          </div>
+          <div class="col-2">
+            <input type="number" class="form-control" placeholder="ads" id="ads" value="" />
+          </div>
+          <div class="col-2">
+            <input type="number" class="form-control" placeholder="discount" id="discount" value="" />
+          </div>
+          <div class="col-2">
+            <span class="total form-control" id="total"> </span>
+          </div>
+        </div>
+      </div>
+      <!-- end inputofprice-->
+      <div class="row mt-2">
+        <div>
+          <input type="text" class="form-control my-2" placeholder="count" id="count" value="" />
+
+          <input type="text" class="form-control mb-2" placeholder="category" id="category" value="" />
+        </div>
+      </div>
+
+      <div class="row">
+        <div>
+          <button class="btn btnColor  w-100" id="Create">Create</button>
+        </div>
+      </div>
+
+      <!-- search -->
+      <div class="row mt-2">
+        <div>
+          <input type="text" class="form-control" placeholder="search" id="search" value="" />
+        </div>
+        <div class="btnsearch d-flex justify-content-between mt-1">
+          <button class="btn btn-warning BtnSearch" id="btntitle">
+            Search By Title
+          </button>
+          <button class="btn btn-warning BtnSearch" id="btncategory">
+            Search By category
+          </button>
+
+        </div>
+        <div>
+          <button class="btn btn-dark mt-2 w-100  d-none" id="btnDeleteall"></button>
+
+        </div>
+
+      </div>
+      <!-- table -->
+      <div class="container">
+        <div class="containerr">
+          <div class="row text-center">
+            <div>
+              <table class="table table-striped mt-3" id="table">
+                <thead>
+                  <th>Id</th>
+                  <th>Title</th>
+                  <th>Price</th>
+                  <th>Taxes</th>
+                  <th>Ads</th>
+                  <th>Discount</th>
+                  <th>Total</th>
+                  <th>Category</th>
+                  <th>Update</th>
+                  <th>Delete</th>
+                </thead>
+                <tbody id="tbody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+  <script src="JS/bootstrap.bundle.min.js"></script>
+  <script src="JS/main.js"></script>
+</body>
+
+</html>
